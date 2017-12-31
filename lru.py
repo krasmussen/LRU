@@ -65,7 +65,7 @@ class LRU_Cache():
 		# if max_entries is exceeded remove entry
 		# NOTE: This should only happen on additions to the queue but we want it to happen after updating refrences
 		if self.queue_entry_count > self.max_entries:
-				self.__remove_lru__()
+			self.__remove_lru__()
 	def keys(self):
 		keys = []
 		cursor = self.start_cursor
